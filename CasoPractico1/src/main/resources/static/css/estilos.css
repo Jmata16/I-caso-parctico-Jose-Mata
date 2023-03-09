@@ -7,7 +7,7 @@
 .titulo{
     top: 25px;
     left: 1%;
-    position: absolute; 
+    position: absolute;
     color: white;
 
 }
@@ -20,11 +20,35 @@
     margin: auto;
 }
 .centrar{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-    
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+.fondoform{
+    width: auto;
+    height: 2000px;
+    background-color: black;
+
+
+}
+.cineFondo{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/cine.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.ver{
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
 }

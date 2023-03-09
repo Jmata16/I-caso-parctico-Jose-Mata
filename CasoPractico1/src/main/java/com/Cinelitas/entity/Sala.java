@@ -13,11 +13,14 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name = "salas")
-public class Sala implements Serializable{
+public class Sala implements Serializable {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)   
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String sala;    
+    private String sala;
+    private String capacidad;
+    private String nombre;
 
     public long getId() {
         return id;
@@ -34,5 +37,22 @@ public class Sala implements Serializable{
     public void setSala(String sala) {
         this.sala = sala;
     }
+
+    public String getCapacidad() {
+        return capacidad;
+    }
+
+    public void setCapacidad(String capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
 
 }

@@ -28,7 +28,7 @@ public class PeliculaController {
     @GetMapping("/pelicula")
     public String index(Model model) {
         List<Pelicula> listaPelicula = peliculaService.getAll();
-        model.addAttribute("titulo", "Tabla peliculas");
+        model.addAttribute("titulo", "Cinelitas Cartelera");
         model.addAttribute("peliculas", listaPelicula);
         return "peliculas";
     }   
